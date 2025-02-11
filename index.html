@@ -6,27 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Видео на весь экран</title>
     <style>
-        /* Сброс отступов и высота на весь экран */
         body, html {
             margin: 0;
             padding: 0;
             overflow: hidden;
             height: 100%;
         }
-        /* Видео на весь экран */
         video {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Чтобы видео заполняло экран без искажений */
+            object-fit: cover;
         }
     </style>
 </head>
 <body>
-    <!-- Видео с автовоспроизведением, циклом и без звука -->
     <video autoplay loop muted playsinline>
-        <!-- Прямая ссылка на видео -->
-        <source src="https://drive.google.com/file/d/139LweCDPze1T23wlWZJ6OsxhTXQj-tQN/view?usp=sharing" type="video/mp4">
-        <!-- Сообщение, если браузер не поддерживает видео -->
+        <source src="https://levkobyakov.github.io/video-loop/loop.mp4" type="video/mp4">
         Ваш браузер не поддерживает видео.
     </video>
 </body>
